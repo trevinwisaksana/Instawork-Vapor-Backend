@@ -1,0 +1,13 @@
+#extend("master")
+
+#export("head") {
+    #embed("title")
+}
+
+#export("body") {
+    #if(sayHello) {
+    <p>Hello! #raw() { #HeiHei }</p>
+    } ##else() {
+        <p>Goodbye!</p>
+    }
+}
